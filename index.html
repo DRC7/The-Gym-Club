@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Courgette&family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <title>Club Website</title>
+
+</head>
+<body>
+    <!-- header Section -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="desktop logo">The Gym Club</a>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="#"><img class="image" src="data:image/png;base64,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"></a></li>
+                    <li><a href="#"><img class="image" src="https://media.istockphoto.com/id/1362037458/photo/3d-barbell-gym.jpg?b=1&s=170667a&w=0&k=20&c=iKWSKd_YYApg7ovzfSoZ6BIT0xMURH9QBzc-WHDt2EI="></a></li>
+                    <li><a href="#"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyeYFBUVJV4o5RGBGiUPZQmc4MEEH1KvALDA&usqp=CAU"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <div class="welcome-box">
+                <div class="content center">
+                    <h1>WELCOME TO THE GYM CLUB</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <div class="summary-heading">
+                <h2>Team up. Work out. Join our events!</h2>
+                <p>Come join the events we have to offer</p>
+                <p>The Gym Club is a place to start and continue your fitness journey.</p>
+            </div>
+        </div>
+        <!-- Feature Section -->
+        <div class="feature-section">
+            <div class="feature">
+                <div class="image-container">
+                    <img class="image-event" src="https://images.unsplash.com/photo-1604480132715-bd70038b74df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VpZ2h0JTIwbG9zc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" />
+                </div>
+                <div class="image-content">
+                    <p>We'll design a weight loss plan together and keep you on track!</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image-container">
+                    <img class="image-event" src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvcmtvdXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" />
+                </div>
+                <div class="image-content">
+                    <p>Custom made workout plans for YOUR body and weight composition</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image-container">
+                    <img class="image-event" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhaW5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" />
+                </div>
+                <div class="image-content">
+                    <p>Personal trainers just for you</p>
+                </div>
+            </div>
+        </div>
+        <!-- Testimony section -->
+        <div class="testimony-section">
+            <div class="testimony">
+                <h1>"I've built my weeknight plans around their events. I can exercise and meet new people every week! I've lost weight and gained muscle!"</h1>
+                <p>-Brain R (member since 2020)</p>
+            </div>
+        </div>
+        <div class="join-section">
+            <div class="image-container">
+                <img class="join-image" src="https://media.istockphoto.com/id/1254069351/photo/two-athletes-doing-elbow-bump-to-great-each-other-in-gym.jpg?b=1&s=170667a&w=0&k=20&c=QaD6Q9xsjRVJAk0WgVR8lB3dFXT65KjZZq8eIZYSazU="/>
+            </div>
+            <div class="join-content">
+                <h1>COME JOIN OUR EVENT TODAY @ 7pm EST</h1>
+                <p>You'll feel very welcomed!</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="content">
+                <span class="copyright">© 2016  The Gym Club, All Rights Reserved</span>
+                <span class="location">Designed in NJ</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.image {
+    height: 5rem;
+    width: 6rem;
+    object-fit: cover;
+    object-position: center;
+    background: transparent;
+}
+
+/* Universal Styles */
+
+html {
+    font-family: 'Aboreto', sans-serif;
+    font-size: 16px;
+}
+
+.main-content {
+    position: relative;
+    top: 3.9rem;
+    background-color: whitesmoke;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 895px) {
+    .main-content {
+        top: 2.1rem;
+    }
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px black;
+    background-color: whitesmoke;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    padding: 1.33rem;
+}
+
+header .logo {
+    flex: 1;
+    font-family: 'Courgette', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 3.5rem;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.2;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Courgette', sans-serif;
+}
+
+nav li:last-child {
+    display: block;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and(max-width: 895px) {
+    nav li:last-child {
+        display: block;
+    }
+
+    header .header-content {
+        padding: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header {
+        height: 6.5rem;
+    }
+
+    .header .content {
+        padding: .5rem .5rem;
+        
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile li {
+        padding: 0;
+    }
+}
+
+.welcome-section {
+    background-image: url("https://images.unsplash.com/photo-1637666062717-1c6bcfa4a4df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    height: 18rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px black;
+}
+
+.welcome-box {
+    padding: 5rem;
+
+}
+
+.content h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #E1AD01;
+}
+
+@media only screen and (max-width: 895px) {
+    .welcome-section {
+        align-items: center;
+        justify-content: center;
+        height: 12rem;
+    }
+
+    .welcome-section .content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-section {
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcome-section .content h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.summary-section {
+    height: 14rem;
+    border-bottom: solid 1px black;
+    background-color: #E1AD01;
+}
+
+.summary-heading h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 2.2rem 0 .6rem;
+}
+
+.summary-heading p {
+    text-align: center;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 895px) {
+    .summary-section {
+        height: 9rem;
+    }
+
+    .summary-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .summary-heading p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .summary-heading h2 {
+        font-size: 1.3rem;
+    }
+}
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    border-bottom: solid 1px black;
+
+}
+
+.feature {
+    flex: 1;
+    padding: 1rem;
+    margin: 0px .75rem;
+}
+
+.feature .image-container {
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.feature .image-content {
+    padding: .5rem 0;
+}
+
+/* the 0 at the end of padding makes the sentence continue on the same line */
+
+.feature p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: .9rem;
+    color: #4a4a4a;
+    line-height: 1.2;
+}
+
+.testimony-section {
+    background-color: #E1AD01;
+    height: 15rem;
+    padding: 2.5rem;
+    border-bottom: solid 1px black;
+}
+
+.testimony h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .testimony h1 {
+        font-size: 1.5rem;
+    }
+
+    .testimony p {
+        font-size: 1rem;
+    }
+}
+
+.join-section {
+    display: block;
+    padding: 3rem 2rem;
+
+}
+
+.join-section .image-container {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 2rem;
+
+}
+
+.join-image {
+    border-radius: 5px;
+}
+
+.join-content h1 , p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+footer {
+    background-color: #9b9b9b;
+    padding: 1rem 2rem;
+}
+
+footer .content {
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
+}
